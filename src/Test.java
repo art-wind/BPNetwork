@@ -11,11 +11,12 @@ import java.util.Scanner;
 
 
 public class Test {
-
+    
 	public static void main(String[]args) throws IOException{
 		//Read in the weight matrix and super arguments
 		//从文件中读取所需要的BP神经网络
 		//读取路径
+        int freeone=0;
 		BPNetwork network = readBPNetwork("./data/Network.obj");
 
 		String inputOrder = "Type 'f' to input a file\n"+"or Type 't' to read in termianl\n"
